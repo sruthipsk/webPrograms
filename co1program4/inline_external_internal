@@ -1,1 +1,56 @@
+<html>
+ <title>inline css</title>
+<body>
+<h1 style="color : blue;
+ font-size: x- large;
+ text-align: center;
+ background-color: chartreuse;">FRIST CRY</H1>
 
+<p style="color: rgb(111, 0, 255);
+ font-style: italic;">
+ Browse through an Elaborate Selection of Baby Products and Essentials
+Shop for different types of diapers and wipes at Amazon.in that are available in various sizes for
+babies of different ages. Ensure your new born baby and little one's hygiene with good quality
+products, making them safe for everyday use. You can also browse through other baby products and
+essentials such as baby lotions, baby shampoos, baby massage oils, baby powders, soaps and body
+wash, feeding bottles, baby blankets, bedding and much more, at great prices on Amazon India.
+</p>
+</body>
+ <title>internal css</title>
+ <style>
+ body {background-color: rgb(238, 252, 224);}
+ h1{color: darkmagenta;
+ font-style: italic;
+ text-align: center;}
+ p{color: brown;
+ font-style: italic;}
+ </style>
+ <body>
+ <h1>BABY PRODUCTS</h1>
+ <p>Shop for Baby Products from Popular Brands
+ Buy baby products across different categories from top brands available here at Amazon.in. Some
+of the popular brands include Huggies, Pampers, MamyPoko, MamaEarth, Himalaya, LuvLap,
+Supples, Sebamed and more. You can avail exciting combo offers from different brands and stock up
+on diapers and wipes, baby lotions, oils, shampoos and washes, or even get great discounts on
+furniture, car seats, strollers, carry cots, decor for the nursery and much more. Amazon India gives
+you an elaborate range of baby products.
+ </p>
+ </body>
+
+ <head><title>external css</title>
+ <link rel="stylesheet" href="ext.css">
+ </head>
+ <body>
+
+ <h1>JOHNSONS</h1>
+ <p>For your baby’s soft skin, trust JOHNSON'S® Baby Soap.
+ Made especially for babies
+ The JOHNSON'S® baby soap is safe
+ Clinically proven to be gentle and mild on your baby’s skin
+ Comes with Triple Baby Protection
+ Enriched with 1/4th baby lotion & Vitamin E
+ Used by 9 out of 10 pediatricians for their own babies
+ No parabens & SLS, No Dyes & Alcohol used
+ We love babies! </p>
+ </body>
+</html>
