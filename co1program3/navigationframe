@@ -1,1 +1,12 @@
-
+<html>
+<head>
+<title>register</title>
+</head>
+<body bgcolor="lightgray">
+<nav><br>
+<a href="mca-1.html"><h1>HOME</h1></a><br>
+<a href="prgrm5.html"><h1>REGISTER</h1></a><br>
+<a href="courses.html"><h1>COURSES</h1></a>
+</nav>
+</body>
+</html>
