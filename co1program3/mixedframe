@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>frames</title>
+</head>
+<frameset cols="60,40">
+<frame src="home.html">
+<frameset rows="40,60">
+<frame src="prgrm2.html">
+<frame src="iframe.html">
+</frameset>
+</frameset>
+</html>
