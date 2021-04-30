@@ -1,94 +1,47 @@
-.cld-main{
-  width: 660px;
+<html>
+<body>
+<h1>Electricity Bill</h1>
+<form method="post" action="#">
+ Consumer ID:<input type="number" name="id"><br>
+ Name: <input type="text" name="name"><br>
+ Previous Reading : <input type="number" name="prev"><br>
+ Present Reading:<input type="number" name="pres"><br><br>
+ <input type="submit">
+</form>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+ $id= $_POST['id'];
+ $name = $_POST['name'];
+ $prev = $_POST['prev'];
+ $pres = $_POST['pres'];
+ $rate = $_POST['rate'];
+ $units=$pres-$prev;
+ echo "-------------------------------------------------------------------------";
+ echo "<h3>Kerala State Electricity Board (KSEB)</h3>";
+ echo "<br><br>";
+ echo "Consumer ID:" .$id."<br>";
+ echo "Consumer name : ".$name."<br>";
+ echo "Units Consumed : ".$units."<br>";
+ if($units<=100)
+ {
+ $amt=$unit*3;
+ }
+ else if($units>100 && $units<=200)
+ {
+ $amt=$units*4;
+ }
+ else if($units>200 && $units<=300)
+ {
+ $amt=$units*5;
+ }
+ else
+ {
+ $amt=$units*5;
+ }
+ echo "<h4>Total : Rs.".($amt)."</h4><br>";
+ echo "-------------------------------------------------------------------------";
 }
-.cld-main a{
-  color: #7B00FF;
-}
-  .cld-datetime{
-    position: relative;
-    width: 66%;
-    min-width: 100px;
-    max-width: 300px;
-    margin: auto;
-    overflow: hidden;
-  }
-  .cld-datetime .today{
-    position: relative;
-    float: left;
-    width: calc(100% - 40px);
-    margin: auto;
-    text-align: center;
-  }
-  .cld-nav{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-  }
-  .cld-nav:hover{
-    cursor: pointer;
-  }
-  .cld-nav:hover svg{
-      fill: #666;
-  }
-  .cld-rwd{
-    float: left;
-  }
-  .cld-fwd{
-    float: right;
-  }
-    .cld-nav svg:hover{
-
-    }
-.cld-labels, .cld-days{
-  padding-left: 0;
-}
-  .cld-label, .cld-day{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 14.28%;
-    text-align: center;
-  }
-  .cld-day{
-    display: block;
-    float: left;
-    position: relative;
-    margin: 0;
-    padding: 5px;
-    height: 66px;
-    border: 1px solid #ddd;
-    overflow-y: auto;
-  }
-  .cld-day.clickable:hover{
-    cursor: pointer;
-  }
-  .cld-day.today{
-    border: 1px solid #7B00FF;
-  }
-  .cld-day.disableDay{
-    opacity: 0.5;
-  }
-  .cld-day.nextMonth, .cld-day.prevMonth{
-    opacity: 0.33;
-  }
-    .cld-number{
-      margin: 0;
-      text-align: left;
-    }
-      .cld-title{
-        font-size: 10px;
-        display: block;
-        margin: 0;
-        font-weight: normal;
-      }
-      .cld-day:hover{
-        background: #eee;
-      }
-      .cld-number.eventday{
-        font-weight: bold;
-      }
-      .cld-number.eventday:hover{
-        background: #eee;
-      }
-      .today .cld-number.eventday:hover{
-      }
+?>
+</body>
+</html>
